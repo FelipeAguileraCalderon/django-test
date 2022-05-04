@@ -19,9 +19,11 @@ from django.conf.urls import include
 
 from petclub.views import HelloWorld
 from petclub.views import Person
+from petclub.views import Pet
 
 urlpatterns = [
     path('hi', HelloWorld.as_view(), name="helloworld"),
     path('person/', Person.as_view(), name="person"),
+    path('pet/', Pet.as_view(), name="pet"),
     path('api-auth/', include('rest_framework.urls')),
 ]

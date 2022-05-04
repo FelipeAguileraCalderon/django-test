@@ -16,3 +16,13 @@ class Person(APIView):
         return Response(data="Persona eliminada con exito", status=200)
     def post(self, request):
         return Response(data="Persona agregada exitosamente!", status=200)
+
+class Pet(APIView):
+    def get(self, request):
+        return Response(data="Hola! Soy una mascota", status=200)
+    def patch(self, request):
+        return Response(data="Parchando mascota", status=200)
+    def delete(self, request):
+        return Response(data="Mascota eliminada con exito", status=200)
+    def post(self, request):
+        return Response(data="Mascota agregada exitosamente!", status=200)
