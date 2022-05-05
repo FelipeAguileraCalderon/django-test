@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 
-from petclub.views import HelloWorld
-from petclub.views import Person
-from petclub.views import Pet
+from petclub.views import (
+    HelloWorld,
+    Person,
+    Pet,
+)
 
 urlpatterns = [
     path('hi', HelloWorld.as_view(), name="helloworld"),
